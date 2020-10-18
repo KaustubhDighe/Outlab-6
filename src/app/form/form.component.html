@@ -1,0 +1,64 @@
+<div id="first">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <form [formGroup]="feedBackForm">
+    <label class="one">
+      Name:
+      <br />
+      <input type="text" formControlName="name" />
+    </label>
+
+    <label class="one">
+      E-mail:
+      <br />
+      <input type="text" formControlName="email" />
+    </label>
+    <br />
+    <label class="one">
+      Feedback:<br />
+      <input
+        type="radio"
+        id="good"
+        formControlName="toggle"
+        value="Great"
+        required
+      />
+      <label for="good">Great</label><br />
+      <input
+        type="radio"
+        id="okay"
+        formControlName="toggle"
+        value="Okay"
+        required
+      />
+      <label for="okay">Okay</label><br />
+      <input
+        type="radio"
+        id="bad"
+        formControlName="toggle"
+        value="Not good"
+        required
+      />
+      <label for="bad">Not Good</label><br />
+    </label>
+
+    <label class="one">
+      Comment:
+      <br />
+      <textarea formControlName="comment"></textarea>
+    </label>
+    <label class="one">
+      <button (click)="onSubmit()">Submit</button>
+    </label>
+    <br />
+    <br />
+    <br />
+    <label class="one">
+      <div [innerHTML]="successMessage"></div>
+    </label>
+  </form>
+</div>
