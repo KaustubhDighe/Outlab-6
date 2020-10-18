@@ -8,7 +8,7 @@ body {
   height: 750px;
   box-shadow: 0 0 15px rgba(14, 41, 57, 0.12), 0 2px 5px rgba(14, 41, 57, 0.44),
     inset 0 -1px 2px rgba(14, 41, 57, 0.15);
-  float: left;
+  float: right;
   padding: 10px 50px 0;
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2044837-jpeg.jpg");
   margin: 2% 30%;
@@ -20,7 +20,7 @@ hr {
   margin-bottom: 30px;
 }
 span {
-  float: left;
+  float: center;
   margin-top: 8px;
   font-size: 17px;
 }
@@ -62,7 +62,7 @@ textarea {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.18);
 }
 .submit {
-  width: 100px;
+  width: 200px;
   margin-left: 83px;
   padding: 10px;
   margin-top: 20px;
